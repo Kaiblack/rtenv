@@ -1041,7 +1041,11 @@ mq_writable (struct pipe_ringbuffer *pipe,
 	}
 	return 1;
 }
-
+void strlen_task()
+{
+	int length = strlen("hello");
+	while (1)
+}
 int
 fifo_write (struct pipe_ringbuffer *pipe,
 			struct task_control_block *task)
